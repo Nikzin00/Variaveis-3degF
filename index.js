@@ -1,3 +1,6 @@
+const prompt = require('prompt-sync');
+const entrada = prompt();
+
 let idade = 17;
 const anoNascimento = 2007;
 let anoAtual = 2024;
@@ -16,16 +19,20 @@ console.log(idade);
 //Agência de viagens Los Angeles, Nova York, Alemanha, Londres, Tokio
 const listaDeDestinos = new Array(
   "Los Angeles",
-  "Nova York",
-  "Alemanha",
-  "Londres",
-  "Tokio"
+  " Nova York",
+  " Alemanha",
+  " Londres",
+  " Tokio"
 );
 
-console.log(listaDeDestinos);
-console.log(listaDeDestinos[3]);
-listaDeDestinos.push("Coronel Vivida");
-listaDeDestinos.push("São Paulo");
-listaDeDestinos.push("Gramados");
-listaDeDestinos.push("Berlin");
-console.log(listaDeDestinos);
+var nomeComprador = entrada("Digite o seu nome");
+var idadeComprador = entrada("Qual a sua idade?");
+
+if(idadeComprador  >=18) {
+  console.log("Comprador maior de idade");
+  console.log("destinos disponíveis: " + listaDeDestinos);
+} else {
+  console.log ("Olá Senhor(a) " + nomeComprador);
+  console.log("Comprador menor de idade");
+  console.log("Infelizmente você não pode comprar a passagem");
+}
