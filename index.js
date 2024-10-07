@@ -18,6 +18,10 @@ console.log(idade);
 
 
 //Agência de viagens Los Angeles, Nova York, Alemanha, Londres, Tokio
+console.log("______________________")
+console.log("__agência de viagens__")
+console.log("______________________")
+console.log("  ");
 const listaDeDestinos = new Array(
   " Grécia",    
   " Cacun",
